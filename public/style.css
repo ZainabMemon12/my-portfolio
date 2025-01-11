@@ -6,6 +6,11 @@
     box-sizing: border-box;
 
 }
+body{
+    overflow-x: hidden;
+    width: 100%;
+
+}
 
 html {
     scroll-behavior: smooth;
@@ -24,11 +29,11 @@ html {
 .navbar {
     padding: 0px 5% 20px 5%;
     align-items: center;
-    position: fixed;
+     position: sticky; 
     top: 0;
     z-index: 1000;
-    width: 100%;
-
+    /* width: 100%; */
+    left: 0;
 }
 
 .navbar.scrolled {
@@ -96,7 +101,7 @@ html {
 .hero-section-1 {
     position: relative;
     padding-bottom: 20px;
-    padding-top: 160px;
+    padding-top: 20px;
 }
 
 .hero1-head-n-img {
@@ -893,7 +898,7 @@ section {
     .a-tags {
 
         background-color: black;
-        width: 100%;
+        width: 90%;
         height: 50vh;
         position: absolute;
         top: 139px;
@@ -1105,9 +1110,6 @@ section {
     }
     .name-email-con{
         grid-template-columns:repeat(auto-fit, minmax(250px, 1fr) );
-    }
-    .navbar{
-        width: 99%;
     }
 
 }
