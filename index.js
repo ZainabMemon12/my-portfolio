@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const FormData = require('./models/formData');
 const app = express()
+require('dotenv').config()
 
 
 
@@ -13,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 // mongodb connect
-mongoose.connect('mongodb://localhost:27017/portfolioDB')
+mongoose.connect(process.env.MONGO_URI)
     .then(() => {
         console.log('connected to database')
     })

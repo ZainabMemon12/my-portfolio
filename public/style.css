@@ -181,6 +181,11 @@ html {
     margin-left: 250px;
     box-shadow: 0 0 25PX #009E66;
 }
+.img1 img{
+    width: 240px;
+    height: 290px;
+
+}
 
 
 .s1-email-con {
@@ -933,6 +938,9 @@ section {
         width: 320px;
 
     }
+    .img1 img{
+        height: 250px;
+    }
 
 }
 
@@ -1100,6 +1108,26 @@ section {
     }
 
 }
+@media (max-width : 470px){
+    .s4-projects {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 40px;
+    }
+    .section4 {
+        padding-left: 30px;
+    }
+    .s4-pro {
+        height: 220px;
+        width: 190px;
+    }
+
+    .s4-pro img {
+        height: 190px;
+        width: 190px;
+
+    }
+}
+
 
 @media (max-width : 430px) {
     .logo-txt {
