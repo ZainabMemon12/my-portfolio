@@ -6,12 +6,6 @@
     box-sizing: border-box;
 
 }
-body{
-    overflow-x: hidden;
-    width: 100%;
-
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -29,17 +23,17 @@ html {
 .navbar {
     padding: 0px 5% 20px 5%;
     align-items: center;
-     position: sticky; 
+      /* position: fixed; 
     top: 0;
     z-index: 1000;
-    /* width: 100%; */
-    left: 0;
+     width: 100%; 
+    left: 0;  */
 }
-
+/* 
 .navbar.scrolled {
     background-color: #2a2a2a;
     box-shadow: 0 2px 20px #009e67b1;
-}
+}  */
 
 
 .logo h1 {
@@ -101,7 +95,7 @@ html {
 .hero-section-1 {
     position: relative;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 140px;
 }
 
 .hero1-head-n-img {
@@ -130,7 +124,7 @@ html {
     font-size: 12px;
     position: absolute;
     transform: rotate(90deg);
-    top: 200px;
+    top: 190px;
 }
 
 .links-con {
@@ -898,8 +892,8 @@ section {
     .a-tags {
 
         background-color: black;
-        width: 90%;
-        height: 50vh;
+        width: 99%;
+        height: 60vh;
         position: absolute;
         top: 139px;
         margin: 0;
@@ -912,6 +906,7 @@ section {
 
     .a-tags a {
         margin-bottom: 20px;
+        width: 200px;
     }
 
     #check:checked~.a-tags {
