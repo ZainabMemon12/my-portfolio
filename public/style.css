@@ -95,7 +95,7 @@ html {
 .hero-section-1 {
     position: relative;
     padding-bottom: 20px;
-    padding-top: 140px;
+    padding-top: 50px;
 }
 
 .hero1-head-n-img {
@@ -124,7 +124,7 @@ html {
     font-size: 12px;
     position: absolute;
     transform: rotate(90deg);
-    top: 190px;
+    top: 80px;
 }
 
 .links-con {
@@ -1270,6 +1270,16 @@ section {
     .headings1 h1 {
         font-size: 25px;
     }
+    .heading2 h1 {
+        font-size: 45px;
+    }
+    .heading2 h2{
+        top: 12px;
+    }
+
+    .headings3 h1 {
+        font-size: 25px;
+    }
 
     .headings1 h2 {
         width: 300px;
@@ -1284,6 +1294,10 @@ section {
     .heading4 h2 {
         font-size: 25px;
         top: 20px;
+    }
+    .card2{
+        padding: 30px 40px;
+        margin: 0 70px;
     }
 
 }
