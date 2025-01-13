@@ -5,12 +5,12 @@ var typed = new Typed(".text", {
     backDelay: 1000,
     loop: true
 })
-// const navbar = document.getElementById("navbar");
+const navbar = document.getElementById("navbar");
 
-//     window.addEventListener("scroll", function () {
-//       if (window.scrollY > 50) { 
-//         navbar.classList.add("scrolled"); 
-//       } else {
-//         navbar.classList.remove("scrolled");
-//       }
-//     });
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 50) { 
+        navbar.classList.add("scrolled"); 
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
