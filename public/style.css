@@ -1148,6 +1148,9 @@ section {
    .heading4{
     margin-bottom: 40px;
    }
+   .em1,.em2,.em3{
+    padding-left: 10px;
+   }
 }
 
 
