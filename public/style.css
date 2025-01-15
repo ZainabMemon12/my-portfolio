@@ -1227,11 +1227,17 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
       }  
+      .heading2{
+        margin-left: 10px;
+    }
 }
 
 @media (max-width : 414px) {
     .headings1 {
         width: 350px;
+        margin-left: 10px;
+    }
+    .heading2{
         margin-left: 10px;
     }
 /* 
@@ -1261,11 +1267,18 @@ section {
     }
 
     .heading2 {
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .heading3 h1 {
         font-size: 80px;
+    }
+    .heading2 h1 {
+        font-size: 50px;
+    }
+    .heading2 h2 {
+        top: 15px;
+        font-size: 30px;
     }
 
     .heading3 h2 {
@@ -1315,6 +1328,9 @@ section {
 
         .headings1{
             width: 300px;
+        }
+        .heading2{
+            margin-left: 10px;
         }
 }
 
