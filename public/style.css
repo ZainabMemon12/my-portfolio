@@ -156,7 +156,7 @@ html {
 
 .headings1 h1 {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 43px;
 
 }
 
@@ -410,15 +410,15 @@ section {
 }
 
 .progress-line.javascript span {
-    width: 70%;
+    width: 80%;
 }
 
 .progress-line.react span {
-    width: 40%;
+    width: 70%;
 }
 
 .progress-line.nodejs span {
-    width: 60%;
+    width: 70%;
 }
 
 .progress-line span::after {
@@ -443,15 +443,15 @@ section {
 }
 
 .progress-line.javascript span::after {
-    content: "70%";
+    content: "80%";
 }
 
 .progress-line.react span::after {
-    content: "40%";
+    content: "70%";
 }
 
 .progress-line.nodejs span::after {
-    content: "60%";
+    content: "70%";
 }
 
 .progress-line span::before {
