@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGO_URI)
   .catch(err => console.log(err));
 
 // Routes
-app.post('/submit-form', async (req, res) => {
+app.post('https://zainabs-portfolio.onrender.com/submit-form', async (req, res) => {
   try {
     const { name, email, message } = req.body;
     await FormData.create({ name, email, message });
