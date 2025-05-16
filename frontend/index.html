@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 
@@ -291,14 +292,14 @@
     <div class="contact-page flex-row">
       <div class="message">
         <h2>Message Me</h2>
-        <form action="/submit-form" method="POST">
-          <div class="name-email-con">
-            <input class="name" type="text" placeholder="Name" name="name">
-            <input class="email" type="email" name="email" placeholder="Email">
-          </div>
-          <textarea class="message-area" name="message" placeholder="Message" cols="10" rows="6"></textarea>
-          <button class="message-btn">Send Message</button>
-        </form>
+       <form id="contactForm">
+  <div class="name-email-con">
+    <input class="name" type="text" placeholder="Name" name="name" required>
+    <input class="email" type="email" name="email" placeholder="Email" required>
+  </div>
+  <textarea class="message-area" name="message" placeholder="Message" cols="10" rows="6" required></textarea>
+  <button class="message-btn" type="submit">Send Message</button>
+</form>
       </div>
       <div class="contact-info">
         <h2>Contact Info</h2>
@@ -336,6 +337,52 @@
 
 
     <script src="main.js"></script>
+    <script>
+  const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      message: form.message.value.trim(),
+    };
+
+    try {
+      const response = await fetch('/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        Swal.fire({
+        icon: 'success',
+        title: 'Success!',
+        text: 'Message successfully submitted!',
+      });
+        form.reset();
+      } else {
+        Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Failed to submit the message.',
+      });
+      }
+    } catch (error) {
+       Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Error submitting the message.',
+    });
+      console.error(error);
+    }
+  });
+</script>
+
 </body>
 
 </html>
