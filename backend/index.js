@@ -30,13 +30,7 @@ app.post('/submit-form', async (req, res) => {
   }
 });
 
-// Serve frontend static files
-app.use(express.static(path.join(__dirname, '../frontend')));
 
-// For all other routes, serve index.html (for frontend routing support if needed)
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../frontend', 'index.html'));
-});
 
 app.listen(3500, () => {
   console.log('server is running on port 3500');
